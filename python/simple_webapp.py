@@ -5,11 +5,13 @@ import flask
 
 
 class BasePage:
+
     def __init__(self):
         self.html = "<h1>Hello world!</h1>"
         self.config = self.load_config()
 
-    def load_config(self):
+    @staticmethod
+    def load_config():
         with open("C:\config.json") as file:
             file_contents = file.read()
             config = json.loads(file_contents)
@@ -21,6 +23,7 @@ class BasePage:
 
 
 class SigninMixin:
+
     def __init__(self):
         self.signed_in = False
 
