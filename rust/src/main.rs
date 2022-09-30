@@ -69,7 +69,7 @@ impl Board {
                 triple
                     .iter()
                     .map(|&i| self.get_state(i))
-                    .fold(true, |acc, x| acc && x == target)
+                    .all(|x| x == target)
             })
             .any(id)
     }
