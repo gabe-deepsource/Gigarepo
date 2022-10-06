@@ -8,26 +8,26 @@ class Header extends Component {
 
   componentDidMount() {
     findDOMNode(this).scrollIntoView();
-    this.state.mode = this.props.userSettings.mode
+    this.state.mode = this.props.userSettings.mode;
     this.setState({
-      mode: this.props.userSettings.mode
+      mode: this.props.userSettings.mode,
     });
   }
 
   componentDidUpdate() {
     this.setState({
-      mode: this.props.userSettings.mode
+      mode: this.props.userSettings.mode,
     });
   }
 
   componentWillUpdate() {
     this.setState({
-      mode: this.props.userSettings.mode
+      mode: this.props.userSettings.mode,
     });
   }
 
   render() {
-    <div class={this.props.class_name}>{this.props.title}</div>;
+    <div className={this.props.class_name}>{this.props.title}</div>;
   }
 }
 
