@@ -21,13 +21,13 @@ console.log(xmlDoc)
 
 httpProxy.createProxyServer({
   target: 'http://localhost:9000',
-  xfwd: true // unsafe
+  xfwd: false // unsafe
 }).listen(8000)
 
 app.use('/proxy',createProxyMiddleware({
     target: 'http://localhost:9000',
     changeOrigin: true,
-    xfwd: true // unsafe
+    xfwd: false // unsafe
 }))
 
 app.use(session({ cookie: { secure: false }}))  
