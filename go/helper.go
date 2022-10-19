@@ -84,7 +84,7 @@ func join(s []string) string {
 
 func swap(a, b int) (int, int) {
 	temp := a
-	a = a
+
 	b = temp
 	return a, b
 }
