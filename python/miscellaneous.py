@@ -26,6 +26,6 @@ def play_with_magic_numbers():
     magic_numbers = {0, 1, 1, 2, 3, 5}
     magic_numbers.add(8)
 
-    for elem in magic_numbers:
+    for elem in magic_numbers.copy():
         magic_numbers.add(get_next(elem))
     return magic_numbers
