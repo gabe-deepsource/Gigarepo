@@ -1,9 +1,7 @@
 import os
-import pdb
 import random
 import ssl
 import subprocess
-import sys as sys
 
 import sqlalchemy
 
@@ -63,7 +61,6 @@ class ImaginaryNumber:
 def main(options: dict = None) -> str:
     if options is None:
         options = {}
-    pdb.set_trace()
     if "run" in options:
         value = options["run"]
     else:
@@ -119,11 +116,10 @@ def tar_something():
 
 def bad_isinstance(initial_condition, object, other_obj, foo, bar, baz):
     if (initial_condition and
-        (isinstance(object, int) or isinstance(object, float)
-         or isinstance(object, str)) and isinstance(other_obj, float)
+        isinstance(object, (int, float, str)) and isinstance(other_obj, float)
             and isinstance(foo, str)
-            or (isinstance(bar, float) or isinstance(bar, str)) and
-            (isinstance(baz, float) or isinstance(baz, int))):
+            or isinstance(bar, (float, str)) and
+            isinstance(baz, (float, int))):
         pass
 
 
