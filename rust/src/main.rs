@@ -41,7 +41,7 @@ impl fmt::Display for Board {
 
 impl Board {
     pub fn new() -> Self {
-        let cells = [[Player::EmptyPlayer; 03]; 03];
+        let cells = [[Player::EmptyPlayer; 3]; 3];
         Self { cells }
     }
 
