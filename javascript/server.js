@@ -74,7 +74,7 @@ function capitalOfCountry(country) {
 
 // This end point executes code sent as the 'code' property of the
 // request object and returns the evaluated value.
-app.get('/exec', async (req, res) => {
+app.get('/exec', (req, res) => {
   try {
     const { code }  = req['body'] // <- uneccessary square bracket notation
     if (typeof code !== 'strign') { // <- bad comparison with `typeof`
@@ -91,7 +91,7 @@ app.get('/exec', async (req, res) => {
 })
 
 // Below is a useless async function without `await`.
-app.get('/capital', async (req, res) => {
+app.get('/capital', (req, res) => {
   const { country } = req.body
   if (country !== country) return statusEnd(400)
   const capital = capitalOfCountry(country)
