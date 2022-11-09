@@ -1,6 +1,17 @@
 version = 1
 
 [[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_root = "github.com/gabe-deepsource/Gigarepo"
+
+[[analyzers]]
+name = "terraform"
+enabled = true
+
+[[analyzers]]
 name = "java"
 enabled = true
 
@@ -44,4 +55,8 @@ enabled = true
 
 [[transformers]]
 name = "google-java-format"
+enabled = true
+
+[[transformers]]
+name = "gofmt"
 enabled = true
