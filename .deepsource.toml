@@ -1,6 +1,38 @@
 version = 1
 
 [[analyzers]]
+name = "test-coverage"
+enabled = true
+
+[[analyzers]]
+name = "sql"
+enabled = true
+
+[[analyzers]]
+name = "shell"
+enabled = true
+
+[[analyzers]]
+name = "scala"
+enabled = true
+
+[[analyzers]]
+name = "ruby"
+enabled = true
+
+[[analyzers]]
+name = "php"
+enabled = true
+
+[[analyzers]]
+name = "docker"
+enabled = true
+
+[[analyzers]]
+name = "ansible"
+enabled = true
+
+[[analyzers]]
 name = "python"
 enabled = true
 
@@ -70,4 +102,16 @@ enabled = true
 
 [[transformers]]
 name = "autopep8"
+enabled = true
+
+[[transformers]]
+name = "scalafmt"
+enabled = true
+
+[[transformers]]
+name = "rubocop"
+enabled = true
+
+[[transformers]]
+name = "php-cs-fixer"
 enabled = true
