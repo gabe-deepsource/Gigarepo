@@ -39,6 +39,12 @@ enabled = true
 name = "javascript"
 enabled = true
 
+  [analyzers.meta]
+  plugins = [
+    "angular",
+    "react"
+  ]
+
 [[analyzers]]
 name = "docker"
 enabled = true
@@ -86,4 +92,8 @@ enabled = true
 
 [[transformers]]
 name = "gofumpt"
+enabled = true
+
+[[transformers]]
+name = "prettier"
 enabled = true
