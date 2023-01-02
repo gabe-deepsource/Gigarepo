@@ -32,10 +32,4 @@ internal class Perf
             Console.WriteLine($"C#'s transformer is {transformers["csharp"]}");
         }
     }
-
-    // CS-P1000: Avoid empty finalizers.
-    // https://deepsource.io/directory/analyzers/csharp/issues/CS-P1000.
-    ~Perf()
-    {
-    }
 }
