@@ -5,8 +5,8 @@ export default function Home({ title, features }) {
   return (
     <>
       <h1
-        class="no-unknown-property"
-        font-size="24"
+        className="no-unknown-property"
+        fontSize="24"
         onClick={() => console.log("Should not use bind in JSX props")}
       >
         {title || "Welcome to DeepSource"}
