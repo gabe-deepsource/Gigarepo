@@ -9,7 +9,7 @@ class Content extends React.Component {
   render() {
     <div
       onClick={() => this.handleClick.bind(this)}
-      class={this.props.class_name}
+      className={this.props.class_name}
     >
       {this.props.title}
     </div>;
