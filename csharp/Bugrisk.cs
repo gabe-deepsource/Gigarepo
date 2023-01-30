@@ -19,7 +19,7 @@ internal class Bugrisk
         var pi = 3.14;
         // CS-W1003: Invalid comparison against `NaN`.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-W1003
-        var isNaN = pi == double.NaN;
+        var isNaN = double.IsNaN(pi);
 
         // CS-W1025: Potential memory leak inside `for` loop due to `stackalloc`.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-W1025.
