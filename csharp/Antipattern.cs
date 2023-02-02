@@ -45,7 +45,7 @@ internal class Antipattern
 
         // CS-R1046: Rewrite `arr.Where(x => x % 3 == 0).Count()` as `arr.Count(x => x % 3 == 0)`.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-R1046
-        var threeMultiples = arr.Where(x => x % 3 == 0).Count();
+        var threeMultiples = arr.Count(x => x % 3 == 0);
 
         // CS-R1047: Use `T?` instead of `Nullable<T>`.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-R1047
