@@ -33,7 +33,7 @@ internal class Antipattern
         var arr = new[] {1, 2, 3, 4, 5};
         // CS-R1019: `arr[arr.Length - 1]` can be rewritten as `arr[^1].`
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-R1019
-        var last = arr[arr.Length - 1];
+        var last = arr[^1];
 
         var emptyString = string.Empty;
         // CS-R1014: Use `string.IsNullOrEmpty` or `string.IsNullOrWhiteSpace` to check for empty strings.
