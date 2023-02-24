@@ -46,4 +46,4 @@ app = flask.Flask(__name__)
 @app.get("/")
 def home():
     response = flask.make_response()
-    response.set_cookie("userid", uuid4().hex)
+    response.set_cookie("userid", uuid4().hex, secure=True)
