@@ -9,7 +9,7 @@ import (
 )
 
 func imageIndex(img []image.Image, find image.Image) int {
-	for i, _ := range img {
+	for i := range img {
 		if img[i] == find {
 			return i
 		}
@@ -18,9 +18,7 @@ func imageIndex(img []image.Image, find image.Image) int {
 }
 
 func imageCopyA(src []image.Image, dst []image.Image) {
-	for i, img := range src {
-		dst[i] = img
-	}
+	copy(dst, src)
 }
 
 func imageCopyB(src []image.Image) (dst []image.Image) {
