@@ -18,9 +18,7 @@ func imageIndex(img []image.Image, find image.Image) int {
 }
 
 func imageCopyA(src []image.Image, dst []image.Image) {
-	for i, img := range src {
-		dst[i] = img
-	}
+	copy(dst, src)
 }
 
 func imageCopyB(src []image.Image) (dst []image.Image) {
