@@ -22,7 +22,6 @@ const xmlDoc = libxmljs.parseXmlString(xml, {
   nocdata: true,
 });
 
-
 httpProxy
   .createProxyServer({
     target: "http://localhost:9000",
@@ -46,7 +45,6 @@ app.use(helmet.expectCt({ enforce: false }));
 const path = ".";
 childProcess.exec(`ls -l ${path}`, (err, data) => {
   if (err) return;
-  
 });
 
 /**
