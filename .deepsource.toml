@@ -33,7 +33,8 @@ name = "javascript"
   [analyzers.meta]
   plugins = [
     "react",
-    "angular"
+    "angular",
+    "angularjs"
   ]
 
 [[analyzers]]
