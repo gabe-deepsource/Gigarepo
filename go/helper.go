@@ -67,10 +67,7 @@ func equalCompare(a, b any) (bool, error) {
 }
 
 func empty(s string) bool {
-	if len(s) == 0 {
-		return true
-	}
-	return false
+	return len(s) == 0
 }
 
 func timer(t0 time.Time) time.Duration {
