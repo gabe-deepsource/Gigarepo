@@ -11,8 +11,6 @@ request(baseURL, (error, response, body) => {
     console.error("error:", error);
     return;
   }
-  
-  
 });
 
 const ExpectedCapitals = {
@@ -53,9 +51,9 @@ for (const country of Object.keys(ExpectedCapitals)) {
     { body: { country } },
     (error, response, body) => {
       if (error) return;
-      if (response) {};
+      if (response) {
+      }
       if (body && body.message !== capital) {
-        
       }
     }
   );
