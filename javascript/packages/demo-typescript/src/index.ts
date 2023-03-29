@@ -22,7 +22,7 @@ export default class DataStore {
   }
 
   get unit() {
-    console.log(this.unit);
+    
   }
 
   static get ["staticNum"]() {
