@@ -21,9 +21,7 @@ export default class DataStore {
     return this.data.data;
   }
 
-  get unit() {
-    console.log(this.unit);
-  }
+  get unit() {}
 
   static get ["staticNum"]() {
     const staticData = { ...this.staticData };

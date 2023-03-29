@@ -21,7 +21,6 @@ const xmlDoc = libxmljs.parseXmlString(xml, {
   noent: true,
   nocdata: true,
 });
-console.log(xmlDoc);
 
 httpProxy
   .createProxyServer({
@@ -46,7 +45,6 @@ app.use(helmet.expectCt({ enforce: false }));
 const path = ".";
 childProcess.exec(`ls -l ${path}`, (err, data) => {
   if (err) return;
-  console.log(data);
 });
 
 /**
@@ -114,4 +112,4 @@ app.get("/capital", async (req, res) => {
   res.end();
 });
 
-app.listen(3000, () => console.log("listening @3000"));
+app.listen(3000, () => {});
