@@ -53,7 +53,7 @@ internal class Antipattern
 
         // CS-R1024: Use `null-coalescing` operator, i.e. rewrite as `i ?? 1`.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-R1024
-        var value = i != null ? i : 1;
+        var value = i ?? 1;
 
         // CS-R1007: Use `Guid.Empty` instead.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-R1007
