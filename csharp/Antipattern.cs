@@ -38,7 +38,7 @@ internal class Antipattern
         var emptyString = string.Empty;
         // CS-R1014: Use `string.IsNullOrEmpty` or `string.IsNullOrWhiteSpace` to check for empty strings.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-R1014
-        if (emptyString == "")
+        if (string.IsNullOrEmpty(emptyString))
         {
             Console.WriteLine("String is empty!");
         }
