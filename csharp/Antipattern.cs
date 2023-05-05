@@ -57,7 +57,7 @@ internal class Antipattern
 
         // CS-R1007: Use `Guid.Empty` instead.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-R1007
-        var guid = new Guid();
+        var guid = Guid.Empty;
 
         var s1 = "alpha";
         var s2 = "Alpha";
