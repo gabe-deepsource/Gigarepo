@@ -9,7 +9,7 @@ internal class Bugrisk
         // CS-W1020: Calling `.ToString()` on an array does not stringify it.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-W1020
         var arr = new[] {1, 2, 3, 4, 5};
-        Console.WriteLine($"Array is {arr.ToString()}");
+        Console.WriteLine($"Array is {string.Join(", ", arr)}");
 
         var name = "Joe";
         // CS-W1000: Missing arguments to interpolation.
