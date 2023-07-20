@@ -18,8 +18,8 @@ class Comment < ApplicationRecord
 end
 
 class Person < ApplicationRecord
-  after_commit :after_commit_callback
   before_validation :before_validation_callback
+  after_commit :after_commit_callback
 
   validates :name, presence: true
 end
